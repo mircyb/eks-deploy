@@ -48,7 +48,7 @@ resource "aws_security_group" "bastion" {
 
 # 아래 아이피 대역에서 ssh접근을 허용함
 resource "aws_security_group_rule" "allowssh" {
-  description = "allow andyhome and 10f"
+  description = "allow 110ip"
   type = "ingress"
   from_port = 22
   to_port = 22
@@ -59,7 +59,7 @@ resource "aws_security_group_rule" "allowssh" {
 
 #아래 아이피 대역에서 모든 접근을 허용함(테스트)
 resource "aws_security_group_rule" "allowall" {
-  description = "allow andyhome"
+  description = "allow 110ip"
   type = "ingress"
   from_port = 0
   to_port = 0
