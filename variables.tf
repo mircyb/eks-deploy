@@ -3,7 +3,7 @@ variable "aws_region" {
 }
 
 variable "cluster-name" {
-  default = "blockchat-prd"
+  default = "my-cluster"
   type    = string
 }
 
