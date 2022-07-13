@@ -53,7 +53,7 @@ resource "aws_security_group_rule" "allowssh" {
   from_port = 22
   to_port = 22
   protocol = "TCP"
-  cidr_blocks= ["220.117.232.147/32"]
+  cidr_blocks= ["110.117.232.147/32"]
   security_group_id = aws_security_group.bastion.id
 }
 
